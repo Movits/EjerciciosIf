@@ -8,7 +8,7 @@
     + ahora verificar todos los usuarios registrados
 
     Info?
-    - nombre y contrasena de usuario
+    + nombre y contrasena de usuario
 
 */
 
