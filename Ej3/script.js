@@ -1,14 +1,20 @@
-const NUMERO_GANADOR_UNO = 333;
-const NUMERO_GANADOR_DOS = 23;
-
 let numeroRecibido = prompt("Ingrese 3 numeros");
 
-if (NUMERO_GANADOR_UNO == numeroRecibido) {
-    alert("Ganaste el primer premio!")
+if (numeroRecibido.length === 3) {
+    let primerNum = numeroRecibido[0];
+    let segundoNum = numeroRecibido[1];
+    let terceroNum = numeroRecibido[2];
+
+    if ((primerNum === segundoNum) && (segundoNum === terceroNum)) {
+        alert("Ganaste el primer premio!")
 } 
-else if(NUMERO_GANADOR_DOS == numeroRecibido){
-    alert("Ganaste el segundo premio!")
+    else if((primerNum === segundoNum) || (primerNum === terceroNum) || (segundoNum === terceroNum)){
+        alert("Ganaste el segundo premio!")
+}
+    else {
+        alert("Ganaste un helado!")
+}
 }
 else {
-    alert("Ganaste un helado!")
+    alert("Por favor, ingrese exactamente 3 numeros.");
 }
