@@ -7,8 +7,17 @@
 </head>
 <body>
     
-    <img id="img-verificada" src="https://i.ebayimg.com/images/g/GbkAAOSwp2dd1oZ2/s-l1200.jpg" alt="resultado de login correcto">
-    <img id="img-no-verificada" src="https://clipart-library.com/data_images/49138.png" alt="resultado de login incorrecto">
+
+    <label for="usuario-nombre">Ingrese Usuario:</label>
+    <input id="usuario-nombre" type="text">
+    <label for="usuario-contrasena">Ingrese Contrasena:</label>
+    <input id="usuario-contrasena" type="text">
+    <button onclick="verificar()">Ingresar</button>
+
+    <p id="resultado"></p>
+
+    <img id="img-verificada" src="" alt="">
+    <img id="img-no-verificada" src="" alt="">
 
     <script src="script.js"></script>
 </body>
