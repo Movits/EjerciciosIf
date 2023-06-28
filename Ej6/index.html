@@ -9,18 +9,19 @@
 
     <h1>Devs & Food - Calculadora de Descuentos</h1>
     
-    <button onclick="calculateDiscount('carnes')">Carnes</button>
-    <button onclick="calculateDiscount('lacteos')">Lácteos</button>
-    <button onclick="calculateDiscount('enlatados')">Enlatados</button>
-    
-    <br> <br>
-    
     <label for="precio">Precio del producto ($):</label> <br>
     <input type="number" id="precio"> <br><br>
 
     <label for="cantidad">Cantidad:</label> <br>
     <input type="number" id="cantidad">
 
+    <button onclick="agregarAlCarrito('carnes')">Carnes</button>
+    <button onclick="agregarAlCarrito('lacteos')">Lácteos</button>
+    <button onclick="agregarAlCarrito('enlatados')">Enlatados</button>
+    
+    <br> <br>
+
+    <button onclick="finalizarCompra()">Finalizar compra</button>
     
     <p id="resultado"></p>
 
